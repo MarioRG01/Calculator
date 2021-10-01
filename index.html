@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap" rel="stylesheet">
+  <title>Calculator app</title>
+</head>
+<body>
+  <main  class="container d-flex flex-column justify-content mejor my-4">
+    <div class="container mt-5 aux">
+      <div class="container d-flex justify-content-center"> 
+      <div class="row arribaXD">
+        <div class="col-6">
+          <h3 class="nombre"> calc </h3>
+        </div>
+  
+        <div class="col-3 mt-5">
+          <p class="tema">  THEME </p>
+        </div>
+        <div class="col-3 ">
+          <div class="row mt-2 mb-0" > 
+            <p class="num"> 1  2  3 </p>
+          </div>
+          <div class="row w-100 mt-0" onmouseup="Tema();">  
+                  <input type="range" class="form-range" min="1" max="3" value="1" id="customRange2"> 
+                </div>
+        </div>
+      </div>
+    </div>
+      <div class="container my-3 d-flex justify-content-cente">
+        <input type="text" class="c-screen" value="" disabled />
+      </div>
+      <div class="container margen calculador">
+        <div class="row justify-content-center" > 
+          <div class="col col-lg-3">
+            <button type="button" value="7" class="botones">7</button>
+          </div>
+          <div class="col col-lg-3">
+            <button type="button" value="8" class="botones">8</button>
+          </div>
+          <div class="col col-lg-3">
+            <button type="button" value="9" class="botones">9</button>
+          </div>
+          <div class="col col-lg-3">
+            <button type="button" class="botones4 del" value="del">DEL</button>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col col-lg-3">
+            <button type="button" value="4" class="botones">4</button>
+          </div>
+          <div class="col col-lg-3">
+            <button type="button" value="5" class="botones">5</button>
+          </div>
+          <div class="col col-lg-3">
+            <button type="button" value="6" class="botones">6</button>
+          </div>
+          <div class="col col-lg-3">
+            <button type="button" class="botones operator" value="+" >+</button>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col col-lg-3">
+            <button type="button" value="1" class="botones">1</button>
+          </div>
+          <div class="col col-lg-3">
+            <button type="button" value="2" class="botones">2</button>
+          </div>
+          <div class="col col-lg-3">
+            <button type="button" value="3" class="botones">3</button>
+          </div>
+          <div class="col col-lg-3">
+            <button type="button" class="botones operator" value="-">-</button>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col col-lg-3">
+            <button type="button" class=" decimal botones" value="." >.</button>
+          </div>
+          <div class="col col-lg-3">
+            <button type="button" value="0" class="botones">0</button>
+          </div>
+          <div class="col col-lg-3">
+            <button type="button" class="botones operator" value="/">/</button>
+          </div>
+          <div class="col col-lg-3">
+            <button type="button" class="botones operator" value="*" >x</button>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col col-lg-6">
+            <button type="button" class="botones2 limpiar" value="limpiar">RESET</button>
+          </div>
+          <div class="col col-lg-6">
+            <button type="button" class="botones3 operator" value="=">=</button>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+      <div>
+        <p></p>
+      </div>
+    </div>
+    <div>
+      <div>
+        <div>
+        </div>
+        <div>
+        </div>
+        <div>
+        </div>
+        <div>
+        </div>
+      </div>
+      <div>
+        <div>
+        </div>
+        <div>
+        </div>
+        <div>
+        </div>
+        </div>
+      </div>
+      <div>
+        <div>
+        </div>
+        <div>
+        </div>
+        <div>
+        </div>
+        </div>
+      </div>
+      <div>
+        <div>
+        </div>
+        <div>
+        </div>
+        </div>
+        </div>
+      </div>
+      <div>
+        <div>
+         
+        </div>
+        <div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  </main>
+  <link rel="stylesheet" href="style.css" id="tem">
+  <script src="cal.js" charset="utf-8"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+</body>
+</html>
